@@ -13,8 +13,14 @@ const playlistmodel=new mongoose.Schema({
     PlaylistName:{
         type:String,
         required:true
+    },
+    Description:{
+        type:String,
+        required:true
     }
 
 },{
     timestamps:true
 })
+
+export const Playlist =mongoose.model("Playlist",playlistmodel)
