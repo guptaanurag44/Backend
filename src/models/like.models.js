@@ -14,6 +14,6 @@ const likeSchema= new mongoose.Schema({
         type:Schema.Types.ObjectId,
         ref:"comment"
     }
-})
+},{timnestamps:true})
 
 export const Like=mongoose.model("Like",likeSchema)
